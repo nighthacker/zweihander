@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+for f in $(ls -dp $PWD/**/.*); do ln -s $f ~/$f:t; done
