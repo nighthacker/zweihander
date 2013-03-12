@@ -9,3 +9,7 @@ alias genpass6='genpass 6'
 function aliasfor(){
   grep -is $1 .zsh/aliases.zsh | sed 's/alias //g;s/=/ maps to /g'
 }
+
+function rj(){
+  javac $1 && java $1:r
+}
