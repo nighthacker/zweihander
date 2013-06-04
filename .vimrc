@@ -44,7 +44,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Rykka/ColorV'
+" Bundle 'Rykka/ColorV'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'tomtom/quickfixsigns_vim'
 " Commands
@@ -77,6 +77,8 @@ Bundle 'vim-scripts/Pydiction'
 Bundle 'java.vim'
 Bundle 'JavaBrowser'
 Bundle 'JavaDecompiler.vim'
+" Clojure
+Bundle 'vim-scripts/VimClojure'
 " Other
 Bundle 'mutewinter/nginx.vim'
 Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
@@ -126,6 +128,7 @@ endif
 " Behaviors
 " ---------------
 syntax enable
+set noswapfile         " Disable swap file creation
 set autoread           " Automatically reload changes if detected
 set wildmenu           " Turn on WiLd menu
 set hidden             " Change buffer - without saving
