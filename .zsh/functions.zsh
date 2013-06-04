@@ -13,3 +13,7 @@ function aliasfor(){
 function rj(){
   javac $1 && java $1:r
 }
+
+function ctop(){
+  cat ~/.zsh_history | cut -c16- | sort | uniq -c | sort -rn | head
+}
