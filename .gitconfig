@@ -1,0 +1,7 @@
+[user]
+  name = Shiv Shankar
+  email = shiv@pobox.com
+[github]
+  user = nighthacker
+[alias]
+  lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
