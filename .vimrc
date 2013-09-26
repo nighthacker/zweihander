@@ -36,7 +36,7 @@ Bundle 'gmarik/vundle'
 " Zoom and restore screens.
 Bundle 'ZoomWin'
 " GOTO file
-Bundle 'wincent/Command-T'
+" Bundle 'wincent/Command-T'
 Bundle 'christoomey/vim-space'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
@@ -193,5 +193,3 @@ set complete=.,w,b,u,U
 " ----------------------------------------
 " Plugin Configuration
 " ----------------------------------------
-
-Bundle 'wincent/Command-T'
