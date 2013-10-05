@@ -1,0 +1,17 @@
+#!/usr/bin/env perl
+
+use 5;
+use strict;
+use warnings;
+
+my $playlist = $ARGV[0] || "Library";
+
+my $script = <<"END_SCRIPT";
+tell application "iTunes"
+  if player state is stopped then
+    play track 1 of playlist "${playlist}"
+  end if
+end tell
+END_SCRIPT
+
+system("/usr/bin/osascript", "-e", $script);
