@@ -33,32 +33,16 @@ Bundle 'gmarik/vundle'
 " Plugin Bundles
 " ---------------
 
-" Zoom and restore screens.
-Bundle 'ZoomWin'
-" GOTO file
-" Bundle 'wincent/Command-T'
-Bundle 'christoomey/vim-space'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
-" UI Additions
-Bundle 'mutewinter/vim-indent-guides'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
-" Bundle 'Rykka/ColorV'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'tomtom/quickfixsigns_vim'
-" Commands
-Bundle 'scrooloose/nerdcommenter'
+Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-speeddating'
-Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
 Bundle 'gmarik/sudo-gui.vim'
-Bundle 'milkypostman/vim-togglelist'
 " Automatic Helpers
 Bundle 'IndexedSearch'
-Bundle 'xolox/vim-session'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
@@ -103,6 +87,7 @@ let mapleader=","
 " ---------------
 " Color
 " ---------------
+colorscheme pablo 
 
 " ---------------
 " Backups
@@ -193,3 +178,5 @@ set complete=.,w,b,u,U
 " ----------------------------------------
 " Plugin Configuration
 " ----------------------------------------
+set laststatus=2 " Display the statusline in all windows
+set noshowmode " Hide default mode below the status line
