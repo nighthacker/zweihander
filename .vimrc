@@ -63,10 +63,12 @@ Bundle 'JavaBrowser'
 Bundle 'JavaDecompiler.vim'
 " Clojure
 Bundle 'vim-scripts/VimClojure'
+" Elixir
+Bundle 'elixir-lang/vim-elixir'
 " Other
 Bundle 'mutewinter/nginx.vim'
 Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
-Bundle 'hallison/vim-markdown'
+Bundle 'tpope/vim-markdown'
 Bundle 'sukima/asciidoc-vim'
 
 filetype plugin indent on  " Automatically detect file types. (must turn on after Vundle)
