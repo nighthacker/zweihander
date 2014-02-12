@@ -106,7 +106,7 @@ set ruler          " Ruler on
 set nu             " Line numbers on
 set nowrap         " Line wrapping off
 set laststatus=2   " Always show the statusline
-set cmdheight=2    " Make the command area two lines high
+set cmdheight=1    " Make the command area two lines high
 set encoding=utf-8
 if exists('+colorcolumn')
   set colorcolumn=80 " Color the 80th column differently
