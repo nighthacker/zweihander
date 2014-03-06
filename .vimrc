@@ -108,6 +108,7 @@ set nowrap         " Line wrapping off
 set laststatus=2   " Always show the statusline
 set cmdheight=1    " Make the command area two lines high
 set encoding=utf-8
+
 if exists('+colorcolumn')
   set colorcolumn=80 " Color the 80th column differently
 endif
@@ -167,7 +168,7 @@ set t_vb=
 " Mouse
 " ---------------
 set mousehide  " Hide mouse after chars typed
-set mouse=a  " Mouse in all modes
+set mouse=a    " Mouse in all modes
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
@@ -186,3 +187,8 @@ noremap <Right> <NOP>
 " ----------------------------------------
 set laststatus=2 " Display the statusline in all windows
 set noshowmode " Hide default mode below the status line
+
+" Source vimrc after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
