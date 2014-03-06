@@ -182,6 +182,12 @@ noremap <Down>  <NOP>
 noremap <Left>  <NOP>
 noremap <Right> <NOP>
 
+map <F5> :tabprevious<CR>
+map <F6> :tabNext<CR>
+
+command! Et tabedit
+command! Ec tabclose
+
 " ----------------------------------------
 " Plugin Configuration
 " ----------------------------------------
