@@ -37,9 +37,7 @@ sub clean_ics($){
 sub add_ics($){
   my ($file) = @_;
   my $filepath = File::Spec->rel2abs($file);
-  my $script = <<"END_SCRIPT";
-tell application "Finder" to open POSIX file "${filepath}"
-END_SCRIPT
+  my $script = "tell application \"Finder\" to open POSIX file \"${filepath}\"";
   system("/usr/bin/osascript", "-e", $script);
 }
 
