@@ -25,9 +25,7 @@ sub clean_ics($){
   open(my $in, "<", "$file") || die("$file: $!");
   open(my $out, ">", "$file.tmp") || die("$file.tmp: $!");
   while(<$in>) {
-    if ($_ =~ m/^(ORGANIZER|ATTENDEE|PARTSTAT)/){
-      next;
-    }
+    next if ($_ =~ m/^(ORGANIZER|ATTENDEE|PARTSTAT)/);
     print $out $_;
   }
   close($in);
