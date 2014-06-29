@@ -18,7 +18,6 @@ function ctop(){
   cat ~/.zsh_history | cut -c16- | sort | uniq -c | sort -rn | head
 }
 
-# https://twitter.com/rob_pike/status/397507643037605888
 function rm {
-  for i; do if test -d $i; then /bin/rmdir $i; else /bin/rm $i; fi done;
+  /bin/mv -v $@ ~/.Trash
 }
