@@ -2,6 +2,9 @@
   name = Shiv Shankar
   email = shiv@pobox.com
 
+[branch]
+  autosetupmerge = true
+
 [github]
   user = sshankar
 
