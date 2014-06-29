@@ -110,7 +110,7 @@ set cmdheight=1    " Make the command area two lines high
 set encoding=utf-8
 
 if exists('+colorcolumn')
-  set colorcolumn=80 " Color the 80th column differently
+  set colorcolumn=100 " Color the 100th column differently
 endif
 
 " ---------------
