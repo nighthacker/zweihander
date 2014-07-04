@@ -2,6 +2,9 @@
   name = Shiv Shankar
   email = shiv@pobox.com
 
+[push]
+  default = simple
+
 [branch]
   autosetupmerge = true
 
