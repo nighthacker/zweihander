@@ -21,3 +21,9 @@ function ctop(){
 function rm {
   /bin/mv -v $@ ~/.Trash
 }
+
+function hardlink {
+  src=`print -r $1(:a)`
+  dst=`print -r $2(:a)`
+  rsync -v -a --link-dest=$src $src $dst
+}
