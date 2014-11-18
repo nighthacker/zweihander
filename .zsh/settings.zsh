@@ -34,3 +34,7 @@ setopt complete_in_word
 setopt always_to_end
 
 zmodload -i zsh/complist
+
+# Keys
+
+bindkey "^[[3~" delete-char
