@@ -1,6 +1,6 @@
 
 function genpass() {
-  echo "$2" | shasum | openssl base64 | cut -c 1-$1
+  echo -n "$2" | shasum | openssl base64 | cut -c 1-$1
 }
 
 alias genpass10='genpass 10'
@@ -18,12 +18,3 @@ function ctop(){
   cat ~/.zsh_history | cut -c16- | sort | uniq -c | sort -rn | head
 }
 
-function rm {
-  /bin/mv -v $@ ~/.Trash
-}
-
-function hardlink {
-  src=`print -r $1(:a)`
-  dst=`print -r $2(:a)`
-  rsync -v -a --link-dest=$src $src $dst
-}
