@@ -177,11 +177,6 @@ set complete=.,w,b,u,U
 " ----------------------------------------
 " Bindings
 " ----------------------------------------
-noremap <Up>    <NOP>
-noremap <Down>  <NOP>
-noremap <Left>  <NOP>
-noremap <Right> <NOP>
-
 map <F5> :tabprevious<CR>
 map <F6> :tabNext<CR>
 
