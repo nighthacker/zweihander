@@ -38,3 +38,7 @@ zmodload -i zsh/complist
 # Keys
 
 bindkey "^[[3~" delete-char
+
+# Env 
+
+export JAVA_HOME=$(/usr/libexec/java_home)
