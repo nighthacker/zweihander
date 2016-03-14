@@ -62,7 +62,7 @@ Bundle 'java.vim'
 Bundle 'JavaBrowser'
 Bundle 'JavaDecompiler.vim'
 " Clojure
-Bundle 'vim-scripts/VimClojure'
+Bundle 'guns/vim-clojure-static'
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
 " Other
@@ -90,7 +90,6 @@ let mapleader=","
 " ---------------
 " Color
 " ---------------
-colorscheme pablo 
 
 " ---------------
 " Backups
