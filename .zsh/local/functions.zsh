@@ -1,8 +1,9 @@
 
 function genpass() {
-  echo -n "$2" | shasum | openssl base64 | cut -c 1-$1
+  echo -n "$2" | shasum | openssl base64 | cut -c 1-$1 | tr -d '\n' 
 }
 
+alias genpass12='genpass 12'
 alias genpass10='genpass 10'
 alias genpass6='genpass 6'
 
