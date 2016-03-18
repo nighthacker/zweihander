@@ -13,10 +13,16 @@ setopt hist_ignore_space
 setopt hist_verify
 setopt inc_append_history
 setopt share_history
+setopt hist_find_no_dups
 
 # Grep
 
 export GREP_COLORS='ms=01;31:mc=01;31:sl=:cx=:fn=35:ln=32:bn=32:se=36'
+
+# I/O
+
+setopt correct
+unsetopt flowcontrol
 
 # Directories
 
@@ -27,7 +33,6 @@ setopt pushd_ignore_dups
 # Completions
 
 unsetopt menu_complete
-unsetopt flowcontrol
 setopt auto_menu
 setopt complete_in_word
 setopt always_to_end
