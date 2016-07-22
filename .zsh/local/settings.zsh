@@ -46,3 +46,6 @@ bindkey "^[[3~" delete-char
 # Env 
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Use system clipboard
+set clipboard=unnamed

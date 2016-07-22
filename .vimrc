@@ -36,7 +36,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
+" Bundle 'Lokaltog/powerline', { 'rtp': 'powerline/bindings/vim' }
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
