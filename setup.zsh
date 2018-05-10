@@ -28,6 +28,10 @@
   # 3. Auto Suggestions
   -zsh-fetch-github "zsh-users" "zsh-autosuggestions" $moduleroot
   echo "source $moduleroot/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $postfile
+  
+  # 4. Substring Search
+  -zsh-fetch-github "zsh-users" "zsh-history-substring-search" $moduleroot
+  echo "source $moduleroot/zsh-history-substring-search/zsh-history-substring-search.zsh" >> $postfile
 }
 
 -zsh-bootstrap "$1"

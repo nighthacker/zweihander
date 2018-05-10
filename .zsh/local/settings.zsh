@@ -42,9 +42,13 @@ zmodload -i zsh/complist
 # Keys
 
 bindkey "^[[3~" delete-char
+bindkey '^[[5D' emacs-backward-word
+bindkey '^[[5C' emacs-forward-word
+
+bindkey ';3C' forward-word
+bindkey ';3D' backward-word
 
 # Env 
-
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Use system clipboard

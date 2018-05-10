@@ -71,6 +71,7 @@ Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
 Bundle 'tpope/vim-markdown'
 Bundle 'sukima/asciidoc-vim'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on  " Automatically detect file types. (must turn on after Vundle)
 
