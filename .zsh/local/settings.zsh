@@ -53,3 +53,5 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Use system clipboard
 set clipboard=unnamed
+
+export PATH=$PATH:$(dirname $0)/bin
