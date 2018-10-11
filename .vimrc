@@ -180,6 +180,9 @@ set complete=.,w,b,u,U
 map <F5> :tabprevious<CR>
 map <F6> :tabNext<CR>
 
+map <F7> :NERDTreeToggle %<CR>
+map <C-,> :NERDTreeFocus<CR>
+
 command! Et tabedit
 command! Ec tabclose
 
@@ -188,6 +191,22 @@ command! Ec tabclose
 " ----------------------------------------
 set laststatus=2 " Display the statusline in all windows
 set noshowmode " Hide default mode below the status line
+
+" automatically load nerdtree when vim starts up opening a directory
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" close vim if nerdtree is the only window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+" ----------------------------------------
+" Filetype Associations
+" ----------------------------------------
+
+autocmd BufNewFile,BufRead *.deckspec set syntax=yaml
+autocmd BufNewFile,BufRead *.template set syntax=yaml
 
 " Source vimrc after saving it
 if has("autocmd")
