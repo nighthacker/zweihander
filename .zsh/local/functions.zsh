@@ -28,7 +28,7 @@ function tab-reset() {
 function git-goto-root(){
   cd ./$(git rev-parse --show-cdup)
 }
-alias gr='git-root'
+alias gr='git-goto-root'
 
 function git-drift(){
   git difftool --dir-diff "$(git rev-parse --abbrev-ref --symbolic-full-name @{u})" "$(git rev-parse --abbrev-ref HEAD)"
