@@ -2,11 +2,9 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "homebrew/dupes"
-tap "homebrew/science"
 
 # Tools
-brew "git", args: ["HEAD", "with-curl", "with-openssl"]
+brew "git", args: ["HEAD"]
 brew "coreutils"
 brew "ack"
 brew "grep"
@@ -34,9 +32,3 @@ brew "zsh"
 # Fonts
 cask "font-source-code-pro"
 cask "font-ibm-plex"
-
-# Applications
-cask "google-chrome"
-cask "virtualbox"
-cask "visual-studio-code"
-cask "zerotier-one"
