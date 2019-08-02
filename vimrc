@@ -1,0 +1,43 @@
+set encoding=utf-8
+set nocompatible
+set nobackup
+set ruler 
+set nu 
+set nowrap 
+set laststatus=2 
+set cmdheight=1
+set noswapfile         
+set autoread           
+set wildmenu           
+set hidden             
+set history=768        
+set cf                 
+set clipboard+=unnamed 
+set autowrite          
+set timeoutlen=350     
+set foldlevelstart=99  
+set formatoptions=crql
+set tabstop=2
+set backspace=2  
+set shiftwidth=2 
+set cindent
+set autoindent
+set smarttab
+set expandtab
+set backspace=2
+set ignorecase 
+set smartcase  
+set incsearch
+set hlsearch
+set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,.sass-cache,*.class
+set showmatch   
+set matchtime=2 
+set noerrorbells
+set novisualbell
+set t_vb=
+set mousehide  
+set mouse=a
+
+if filereadable(expand("~/.vim/vundle.vim"))
+  source ~/.vim/vundle.vim
+endif
